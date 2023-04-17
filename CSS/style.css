@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Open+Sans:ital@1&family=Poppins:wght@200&family=Roboto&display=swap');
+
+:root {
+    --body: #4F4557;
+    --fonts: #F4EEE0;
+    --titles: #46C2CB;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,40 +13,66 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: var(--body);
+}
+
 header {
-    background-color: rgb(52, 116, 116);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 15px 50px;
     width: 100%;
 }
 
 header h2 {
     font-size: 2rem;
-    color: #fff;
+    color: var(--fonts);
     font-weight: bold;
 }
 
 .header-nav a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--fonts);
+    font-weight: bold;
     margin-left: 10px;
+}
+
+.header-nav a:hover {
+    color: var(--titles);
+    transition: 0.5s;
 }
 
 #home {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 120px 50px;
 }
 
-#home h1 {
-    font-size: 5rem;
+.informations {
+    width: 45vw;
 }
 
-#home span {
-    font-size: 1.5rem;
+.informations h1 {
+    font-size: 2.5rem;
+    color: var(--titles);
+    margin: 5px 0;
+}
+
+.informations span {
+    font-size: 2rem;
+    color: var(--titles);
+    font-weight: bold;
+}
+
+.informations p {
+    margin-top: 20px;
+    color: var(--fonts);
+}
+
+.icons-medias img{
+    height: 45px;
+    margin: 55px 15px 0 0;
 }
