@@ -73,16 +73,12 @@ header h2 {
     color: var(--fonts);
 }
 
-.icons-medias img{
-    height: 45px;
-    margin: 55px 15px 0 0;
-}
-
-.informations-card h2{
+.informations-card h2,
+#projects h2 {
     text-align: center;
     color: var(--titles);
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .cards {
@@ -95,7 +91,7 @@ header h2 {
     align-items: center;
     flex-direction: column;
     background-color: var(--fonts);
-    margin-left: 15px;
+    margin-left: 25px;
     height: 145px;
     padding: 15px 50px;
     border-radius: 5px;
@@ -106,7 +102,61 @@ header h2 {
     margin-bottom: 20px;
 }
 
-.card p {
+.card p{
     font-weight: bold;
     font-size: 1.2rem;
+}
+
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15vh;
+}
+
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-project {
+    background-color: var(--fonts);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#projects img {
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+
+#projects p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 15px;
+}
+
+#projects a {
+    text-decoration: none;
+    color: var(--fonts);
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0px 15px 15px;
+    background-color: var(--body);
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+#projects a:hover {
+    color: var(--titles);
+    background-color: #362f3b;
+    transition: 0.5s;
 }
