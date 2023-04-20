@@ -48,7 +48,8 @@ header h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 100px 50px;
+    align-items: center;
+    margin: 50px 50px;
 }
 
 .informations {
@@ -84,6 +85,7 @@ header h2 {
 .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -91,7 +93,7 @@ header h2 {
     align-items: center;
     flex-direction: column;
     background-color: var(--fonts);
-    margin-left: 25px;
+    margin: 25px;
     height: 145px;
     padding: 15px 50px;
     border-radius: 5px;
