@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Open+Sans:ital@1&family=Poppins:wght@200&family=Roboto&display=swap');
 
 :root {
-    --body: #4F4557;
-    --fonts: #F4EEE0;
-    --titles: #46C2CB;
+    --body: #000000;
+    --fonts: #d1e751;
+    --card-body: #ece9e9;
+    --titles: #4dbce9;
 }
 
 * {
@@ -92,7 +93,7 @@ header h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--fonts);
+    background-color: var(--card-body);
     margin: 25px;
     height: 145px;
     padding: 15px 50px;
@@ -126,7 +127,7 @@ header h2 {
 }
 
 .card-project {
-    background-color: var(--fonts);
+    background-color: var(--card-body);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,6 +160,6 @@ header h2 {
 
 #projects a:hover {
     color: var(--titles);
-    background-color: #362f3b;
+    background-color: #1a1919;
     transition: 0.5s;
 }
