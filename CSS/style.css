@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Open+Sans:ital@1&family=Poppins:wght@200&family=Roboto&display=swap');
 
 :root {
-    --body: #000000;
-    --fonts: #d1e751;
+    --body: #171717;
+    --fonts: #F9F9F9;
+    --fonts2: #0BA049;
     --card-body: #ece9e9;
-    --titles: #4dbce9;
+    --h2: #828282;
 }
 
 * {
@@ -41,7 +42,7 @@ header h2 {
 }
 
 .header-nav a:hover {
-    color: var(--titles);
+    color: var(--fonts2);
     transition: 0.5s;
 }
 
@@ -59,13 +60,13 @@ header h2 {
 
 .informations h1 {
     font-size: 3.5rem;
-    color: var(--titles);
+    color: var(--fonts);
     margin: 5px 0;
 }
 
 .informations h2 {
     font-size: 2rem;
-    color: var(--titles);
+    color: var(--h2);
     font-weight: bold;
 }
 
@@ -75,12 +76,31 @@ header h2 {
     color: var(--fonts);
 }
 
+.informations-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .informations-card h2,
 #projects h2 {
     text-align: center;
-    color: var(--titles);
+    color: var(--fonts);
     font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.rect {
+    margin: 15px 10px;
+    height: 5px;
+    width: 6vw;
+    background-color: #0BA049;
 }
 
 .cards {
@@ -159,7 +179,7 @@ header h2 {
 }
 
 #projects a:hover {
-    color: var(--titles);
-    background-color: #1a1919;
+    color: var(--body);
+    background-color: var(--fonts2);
     transition: 0.5s;
 }
