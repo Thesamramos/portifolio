@@ -87,16 +87,12 @@ header h2 {
     font-size: 1.8rem;
 }
 
-.skills,
 .social-medias {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    margin: 15px;
+    margin-top: 15px;
 }
-
-.skills p,
 .social-medias a {
     color: var(--fonts);
     text-decoration: none;
