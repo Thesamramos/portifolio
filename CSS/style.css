@@ -89,7 +89,6 @@ header h2 {
 
 .social-medias {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-top: 15px;
 }
@@ -176,7 +175,7 @@ header h2 {
 }
 
 .phone {
-    margin-left: -18vw;
+    margin-left: -16vw;
 }
 
 .email img, .phone img {
@@ -243,6 +242,49 @@ header h2 {
 }
 
 @media screen and (max-width: 480px) {
+    header h2{
+        margin-left: -40px;
+    }
+
+    .header-nav a {
+        margin-left: 5px;
+    }
+
+    #home {
+        justify-content: center;
+    }
+
+    .informations {
+        justify-content: center;
+    }
+
+    .informations h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .informations h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .informations p {
+        text-align: center;
+    }
+
+    .social-medias {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-medias a {
+        font-size: 1.5rem;
+        padding: 15px 15px;
+    }
+
+    .rect {
+        width: 17vw;
+    }
     .email, .phone {
         display: flex;
         align-items: center;
