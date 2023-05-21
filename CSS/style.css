@@ -19,38 +19,11 @@ body {
     background-color: var(--body);
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 50px;
-    width: 100%;
-}
-
-header h2 {
-    font-size: 2rem;
-    color: var(--fonts);
-    font-weight: bold;
-}
-
-.header-nav a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: var(--fonts);
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.header-nav a:hover {
-    color: var(--fonts2);
-    transition: 0.5s;
-}
-
 #home {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 50px;
+    margin: 100px 50px;
 }
 
 .informations {
@@ -171,11 +144,11 @@ header h2 {
 } 
 
 .email {
-    margin-left: -9vw;
+    margin-left: -7vw;
 }
 
 .phone {
-    margin-left: -16vw;
+    margin-left: -14vw;
 }
 
 .email img, .phone img {
@@ -242,16 +215,10 @@ header h2 {
 }
 
 @media screen and (max-width: 480px) {
-    header h2{
-        margin-left: -40px;
-    }
-
-    .header-nav a {
-        margin-left: 5px;
-    }
-
     #home {
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .informations {
