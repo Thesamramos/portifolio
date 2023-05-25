@@ -24,7 +24,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 31vh;
 }
 
 .informations {
@@ -32,12 +31,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 25vh;
 }
 
 .informations h1 {
     font-size: 6rem;
     color: var(--fonts);
-
 }
 
 .informations h2 {
@@ -79,6 +78,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     text-align: center;
     color: var(--fonts);
     font-size: 1.3rem;
@@ -219,16 +219,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    #home {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
     .informations {
-        justify-content: center;
+        margin: 10vh;
     }
-
+    
     .informations h1 {
         font-size: 3rem;
         text-align: center;
@@ -239,10 +233,6 @@ body {
         font-size: 1.5rem;
     }
 
-    .informations p {
-        text-align: center;
-    }
-
     .social-medias {
         align-items: center;
         justify-content: center;
@@ -251,9 +241,5 @@ body {
     .social-medias a {
         font-size: 1.5rem;
         padding: 10px;
-    }
-
-    .rect {
-        width: 17vw;
     }
 }
