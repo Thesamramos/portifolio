@@ -20,18 +20,18 @@ body {
 }
 
 #home {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 100px 50px;
+    margin: 200px;
 }
 
 .informations {
-    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .informations h1 {
-    font-size: 3.5rem;
+    font-size: 6rem;
     color: var(--fonts);
     margin: 5px 0;
 }
@@ -40,12 +40,6 @@ body {
     font-size: 2rem;
     color: var(--h2);
     font-weight: bold;
-}
-
-.informations p {
-    margin-top: 20px;
-    font-size: 1.1rem;
-    color: var(--fonts);
 }
 
 .informations2 {
@@ -84,6 +78,7 @@ body {
     text-align: center;
     color: var(--fonts);
     font-size: 1.3rem;
+    margin-top: 40px;
     margin-bottom: 1rem;
 }
 
@@ -103,23 +98,28 @@ body {
     margin: 50px;
 }
 
-.about img {
+.aboutme img {
     height: 40vh;
     border-radius: 10px;
 }
 
-.text p {
-    text-align: center;
+.aboutme, .textAboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--card-body);
+    margin: 5px 15vw;
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 
 .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--card-body);
-    border-radius: 10px;
-    padding: 15px 10px;
     margin: 10px;
+
 }
 
 .skills h3 {
@@ -140,16 +140,9 @@ body {
 .email, .phone {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 5px;
 } 
-
-.email {
-    margin-left: -7vw;
-}
-
-.phone {
-    margin-left: -14vw;
-}
 
 .email img, .phone img {
     height: 5vh;
@@ -158,6 +151,12 @@ body {
 .email p, .phone p {
     margin-left: 5px;
     font-size: 1rem;
+}
+
+.textAboutMe p {
+    font-size: 1.1rem;
+    color: var(--body);
+    text-align: center;
 }
 
 #projects, #about-me{
@@ -246,15 +245,10 @@ body {
 
     .social-medias a {
         font-size: 1.5rem;
-        padding: 15px 15px;
+        padding: 10px;
     }
 
     .rect {
         width: 17vw;
     }
-    .email, .phone {
-        display: flex;
-        align-items: center;
-        margin-left: 0;
-    } 
 }
