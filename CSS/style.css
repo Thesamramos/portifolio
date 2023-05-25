@@ -20,7 +20,11 @@ body {
 }
 
 #home {
-    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 31vh;
 }
 
 .informations {
@@ -33,7 +37,7 @@ body {
 .informations h1 {
     font-size: 6rem;
     color: var(--fonts);
-    margin: 5px 0;
+
 }
 
 .informations h2 {
@@ -173,6 +177,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .card-project {
