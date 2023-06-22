@@ -52,6 +52,7 @@ body {
     align-items: center;
     margin-top: 15px;
 }
+
 .social-medias a, .skill {
     color: var(--fonts);
     text-align: center;
